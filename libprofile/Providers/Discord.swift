@@ -34,11 +34,10 @@ import UIKit
 			// Convert our response into a UIImage
 			guard let data = data,
 				  let img = UIImage(data: data) else { return }
-			// Call the given callback!
-			DispatchQueue.global(qos: .userInitiated).async {
+			// Call the callback!
+			DispatchQueue.main.async(qos: .userInitiated) {
 				callback(img)
 			}
-			
 		}.resume()
 	}
 }
