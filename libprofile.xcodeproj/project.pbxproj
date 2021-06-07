@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		AC8761B5266ECF4800A8B4F5 /* libprofile.h in Headers */ = {isa = PBXBuildFile; fileRef = AC8761B2266ECF4800A8B4F5 /* libprofile.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC8761BC266ECFBE00A8B4F5 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8761BB266ECFBE00A8B4F5 /* File.swift */; };
+		ACBB9EE2266EDC71004DBF80 /* NCNotificationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = ACBB9EDD266EDBEC004DBF80 /* NCNotificationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACBB9EE5266EDC8F004DBF80 /* ProfileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB9EE4266EDC8F004DBF80 /* ProfileProvider.swift */; };
+		ACBB9EE7266EDD9B004DBF80 /* Discord.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB9EE6266EDD9B004DBF80 /* Discord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC8761AF266ECF4800A8B4F5 /* libprofile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libprofile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8761B2266ECF4800A8B4F5 /* libprofile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libprofile.h; sourceTree = "<group>"; };
-		AC8761BB266ECFBE00A8B4F5 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		ACBB9EDD266EDBEC004DBF80 /* NCNotificationRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCNotificationRequest.h; sourceTree = "<group>"; };
+		ACBB9EE4266EDC8F004DBF80 /* ProfileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProvider.swift; sourceTree = "<group>"; };
+		ACBB9EE6266EDD9B004DBF80 /* Discord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,10 +52,20 @@
 		AC8761B1266ECF4800A8B4F5 /* libprofile */ = {
 			isa = PBXGroup;
 			children = (
+				ACBB9EE3266EDC88004DBF80 /* Providers */,
 				AC8761B2266ECF4800A8B4F5 /* libprofile.h */,
-				AC8761BB266ECFBE00A8B4F5 /* File.swift */,
+				ACBB9EDD266EDBEC004DBF80 /* NCNotificationRequest.h */,
+				ACBB9EE4266EDC8F004DBF80 /* ProfileProvider.swift */,
 			);
 			path = libprofile;
+			sourceTree = "<group>";
+		};
+		ACBB9EE3266EDC88004DBF80 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				ACBB9EE6266EDD9B004DBF80 /* Discord.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,6 +76,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC8761B5266ECF4800A8B4F5 /* libprofile.h in Headers */,
+				ACBB9EE2266EDC71004DBF80 /* NCNotificationRequest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +112,7 @@
 				TargetAttributes = {
 					AC8761AE266ECF4800A8B4F5 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -133,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC8761BC266ECFBE00A8B4F5 /* File.swift in Sources */,
+				ACBB9EE7266EDD9B004DBF80 /* Discord.swift in Sources */,
+				ACBB9EE5266EDC8F004DBF80 /* ProfileProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +286,7 @@
 					arm64e,
 					arm64,
 				);
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -292,6 +310,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,6 +323,7 @@
 					arm64e,
 					arm64,
 				);
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
