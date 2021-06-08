@@ -7,8 +7,6 @@
 
 import UIKit
 
-import UIKit
-
 @objc class MessengerProfileProvider: NSObject, ProfileProvider {
 
 	@objc func contactPhoto(request: NCNotificationRequest, with header: String, with body: String, callback: @escaping (UIImage) -> Void) {
@@ -31,8 +29,8 @@ import UIKit
 			guard let data = data,
 				  var img = UIImage(data: data) else { return }
 			img = img.compressed
-			callback(img)
 			// Call the callback
+			callback(img)
 		}.resume()
 	}
 
