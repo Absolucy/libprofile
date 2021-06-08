@@ -14,6 +14,7 @@
 		E181FA6C266FDEA200717493 /* UIImage+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181FA6B266FDEA200717493 /* UIImage+Compression.swift */; };
 		E181FA9D266FF7F600717493 /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181FA9C266FF7F600717493 /* Instagram.swift */; };
 		E181FA9F266FFC8800717493 /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181FA9E266FFC8800717493 /* Messenger.swift */; };
+		E181FAA6266FFF3700717493 /* FolderFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181FAA5266FFF3700717493 /* FolderFinder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E181FA6B266FDEA200717493 /* UIImage+Compression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Compression.swift"; sourceTree = "<group>"; };
 		E181FA9C266FF7F600717493 /* Instagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
 		E181FA9E266FFC8800717493 /* Messenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
+		E181FAA5266FFF3700717493 /* FolderFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderFinder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				E181FA6B266FDEA200717493 /* UIImage+Compression.swift */,
+				E181FAA5266FFF3700717493 /* FolderFinder.swift */,
 			);
 			path = Contrib;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				E181FA9D266FF7F600717493 /* Instagram.swift in Sources */,
 				ACBB9EE7266EDD9B004DBF80 /* Discord.swift in Sources */,
 				ACBB9EE5266EDC8F004DBF80 /* ProfileProvider.swift in Sources */,
+				E181FAA6266FFF3700717493 /* FolderFinder.swift in Sources */,
 				E181FA9F266FFC8800717493 /* Messenger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
