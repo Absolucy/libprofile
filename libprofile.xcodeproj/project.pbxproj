@@ -16,6 +16,10 @@
 		E181FA9D266FF7F600717493 /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181FA9C266FF7F600717493 /* Instagram.swift */; };
 		E181FA9F266FFC8800717493 /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181FA9E266FFC8800717493 /* Messenger.swift */; };
 		E181FAA6266FFF3700717493 /* FolderFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181FAA5266FFF3700717493 /* FolderFinder.swift */; };
+		E181FAAF2670047600717493 /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181FAAE2670047600717493 /* Twitter.swift */; };
+		E181FAB526700B6E00717493 /* WhatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181FAB426700B6E00717493 /* WhatsApp.swift */; };
+		E181FABB26700F6000717493 /* Slack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181FABA26700F6000717493 /* Slack.swift */; };
+		E181FAC22670160000717493 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181FAC12670160000717493 /* Messages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		E181FA9C266FF7F600717493 /* Instagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
 		E181FA9E266FFC8800717493 /* Messenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
 		E181FAA5266FFF3700717493 /* FolderFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderFinder.swift; sourceTree = "<group>"; };
+		E181FAAE2670047600717493 /* Twitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
+		E181FAB426700B6E00717493 /* WhatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsApp.swift; sourceTree = "<group>"; };
+		E181FABA26700F6000717493 /* Slack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slack.swift; sourceTree = "<group>"; };
+		E181FAC12670160000717493 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +84,12 @@
 			children = (
 				ACBB9EE6266EDD9B004DBF80 /* Discord.swift */,
 				E181FA9C266FF7F600717493 /* Instagram.swift */,
+				E181FAC12670160000717493 /* Messages.swift */,
 				E181FA9E266FFC8800717493 /* Messenger.swift */,
+				E181FABA26700F6000717493 /* Slack.swift */,
 				ACBB0B88266FFF42004C16AB /* Telegram.swift */,
+				E181FAAE2670047600717493 /* Twitter.swift */,
+				E181FAB426700B6E00717493 /* WhatsApp.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -173,9 +185,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E181FA6C266FDEA200717493 /* UIImage+Compression.swift in Sources */,
+				E181FAC22670160000717493 /* Messages.swift in Sources */,
 				E181FA9D266FF7F600717493 /* Instagram.swift in Sources */,
 				ACBB0B89266FFF42004C16AB /* Telegram.swift in Sources */,
+				E181FABB26700F6000717493 /* Slack.swift in Sources */,
+				E181FAB526700B6E00717493 /* WhatsApp.swift in Sources */,
 				ACBB9EE7266EDD9B004DBF80 /* Discord.swift in Sources */,
+				E181FAAF2670047600717493 /* Twitter.swift in Sources */,
 				ACBB9EE5266EDC8F004DBF80 /* ProfileProvider.swift in Sources */,
 				E181FAA6266FFF3700717493 /* FolderFinder.swift in Sources */,
 				E181FA9F266FFC8800717493 /* Messenger.swift in Sources */,

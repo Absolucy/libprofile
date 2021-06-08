@@ -5,7 +5,6 @@
 //  Created by Aspen on 6/7/21.
 //
 
-import Foundation
 import UIKit
 
 @objc protocol ProfileProvider {
