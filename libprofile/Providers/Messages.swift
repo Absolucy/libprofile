@@ -4,21 +4,24 @@
 //
 //  Created by Andromeda on 08/06/2021.
 //
+//  This Source Code Form is subject to the terms of the Mozilla Public
+//  License, v. 2.0. If a copy of the MPL was not distributed with this
+//  file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 import UIKit
 import AddressBook
 import AddressBookUI
 import Contacts
 
-@objc class MessagesProfileProvider: NSObject, ProfileProvider {
+@objc public class MessagesProfileProvider: NSObject, ProfileProvider {
 
-	@objc func contactPhoto(request: NCNotificationRequest, with header: String, with body: String, callback: @escaping (UIImage) -> Void) {
+	@objc public func contactPhoto(request: NCNotificationRequest, with header: String, with body: String, callback: @escaping (UIImage) -> Void) {
 		guard let userNotif = request.userNotification else { return }
 		// Get the autor information out of the user notification.
 		let userReq = userNotif.request
 		let userContent = userReq.content
 		let info = userContent.userInfo
-		
+
 		var contacts = [CNContact]()
 		var identifier: NSString?
 		if let localIdentifier = info["CKBBContextKeySenderPersonCentricID"] as? NSString {
@@ -68,7 +71,7 @@ import Contacts
 				NSLog("[libprofile] failed to fetch message avatar: \(error.localizedDescription)")
 			}
 		}
-		
+
 		if contacts.isEmpty { return }
 		for contact in contacts {
 			if let imageData = contact.imageData,

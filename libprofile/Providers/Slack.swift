@@ -4,19 +4,22 @@
 //
 //  Created by Andromeda on 08/06/2021.
 //
+//  This Source Code Form is subject to the terms of the Mozilla Public
+//  License, v. 2.0. If a copy of the MPL was not distributed with this
+//  file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 import UIKit
 import SQLite3
 
-@objc class SlackProfileProvider: NSObject, ProfileProvider {
+@objc public class SlackProfileProvider: NSObject, ProfileProvider {
 
-	@objc func contactPhoto(request: NCNotificationRequest, with header: String, with body: String, callback: @escaping (UIImage) -> Void) {
+	@objc public func contactPhoto(request: NCNotificationRequest, with header: String, with body: String, callback: @escaping (UIImage) -> Void) {
 		guard let userNotif = request.userNotification else { return }
 		// Get the autor information out of the user notification.
 		let userReq = userNotif.request
 		let userContent = userReq.content
 		let info = userContent.userInfo
-		
+
 		guard let aps = info["aps"] as? NSDictionary,
 			  let alert = aps["alert"] as? NSDictionary,
 			  let body = alert["body"] as? NSString,
